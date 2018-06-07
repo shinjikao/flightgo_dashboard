@@ -17,7 +17,22 @@ export default {
         attributes: {}        // optional valid JS object with JS API naming ex: { className: "my-class", style: { fontFamily: "Verdana" }, id: "my-id"}
       },
       class: ''             // optional class names space delimited list for title item ex: "text-center"
-    },
+    }, 
+    {
+      name: '儀表板1',
+      url: '/dashboard',
+      icon: 'icon-chart',
+    },  
+    {
+      name: '使用者分析',
+      url: '/theme/colors',
+      icon: 'icon-graph',
+    },  
+    {
+      name: '對話紀錄系統',
+      url: '/theme/colors',
+      icon: 'icon-bubbles',
+    }, 
     {
       name: 'Colors',
       url: '/theme/colors',

@@ -37,6 +37,11 @@ const Forms = Loadable({
   loading: Loading,
 });
 
+const PushMessage = Loadable({
+  loader: () => import('./views/Base/PushMessage'),
+  loading: Loading,
+});
+
 const Jumbotrons = Loadable({
   loader: () => import('./views/Base/Jumbotrons'),
   loading: Loading,
@@ -183,6 +188,7 @@ const routes = [
   { path: '/base', exact: true, name: 'Base', component: Cards },
   { path: '/base/cards', name: 'Cards', component: Cards },
   { path: '/base/forms', name: 'Forms', component: Forms },
+  { path: '/base/push-message', name: 'Push Message', component: PushMessage },
   { path: '/base/switches', name: 'Switches', component: Switches },
   { path: '/base/tables', name: 'Tables', component: Tables },
   { path: '/base/tabs', name: 'Tabs', component: Tabs },
