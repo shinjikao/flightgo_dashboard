@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Forms from './PushMessage';
+import Forms from './Analysis';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');

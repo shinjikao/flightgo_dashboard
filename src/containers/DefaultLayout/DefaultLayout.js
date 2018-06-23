@@ -49,7 +49,8 @@ class DefaultLayout extends Component {
                   },
                 )}
                 {/* <Redirect from="/" to="/dashboard" /> */}
-                <Redirect from="/" to="/base/push-message"/>
+                {/* <Redirect from="/" to="/base/push-message"/> */}
+                <Redirect from="/" to="/base/custom-services"/>
               </Switch>
             </Container>
           </main>

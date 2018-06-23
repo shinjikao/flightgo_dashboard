@@ -1,0 +1,6 @@
+{
+  "name": "CustomServices",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./CustomServices.js"
+}

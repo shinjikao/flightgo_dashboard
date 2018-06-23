@@ -37,8 +37,31 @@ const Forms = Loadable({
   loading: Loading,
 });
 
+const Summary = Loadable({
+  loader: () => import('./views/Base/Summary'),
+  loading: Loading,
+});
+
+const CustomServices = Loadable({
+  loader: () => import('./views/Base/CustomServices'),
+  loading: Loading,
+});
+
+
+const Analysis = Loadable({
+  loader: () => import('./views/Base/Analysis'),
+  loading: Loading,
+});
+
+
 const PushMessage = Loadable({
   loader: () => import('./views/Base/PushMessage'),
+  loading: Loading,
+});
+
+
+const UserHistory = Loadable({
+  loader: () => import('./views/Base/UserHistory'),
   loading: Loading,
 });
 
@@ -188,7 +211,14 @@ const routes = [
   { path: '/base', exact: true, name: 'Base', component: Cards },
   { path: '/base/cards', name: 'Cards', component: Cards },
   { path: '/base/forms', name: 'Forms', component: Forms },
+
+  //====Floghtgo
+  { path: '/base/summary', name: 'Summary', component: Summary },
   { path: '/base/push-message', name: 'Push Message', component: PushMessage },
+  { path: '/base/custom-services', name: 'Custom Services', component: CustomServices },
+  { path: '/base/analysis', name: 'Analysis', component: Analysis },
+  { path: '/base/user-history', name: 'User History', component: UserHistory },
+  //=======
   { path: '/base/switches', name: 'Switches', component: Switches },
   { path: '/base/tables', name: 'Tables', component: Tables },
   { path: '/base/tabs', name: 'Tabs', component: Tabs },
@@ -220,6 +250,8 @@ const routes = [
   { path: '/notifications/modals', name: 'Modals', component: Modals },
   { path: '/widgets', name: 'Widgets', component: Widgets },
   { path: '/charts', name: 'Charts', component: Charts },
+
+
 ];
 
 export default routes;

@@ -9,8 +9,8 @@ module.exports = (app) => {
 
 
     // send message from backend
-    app.post('/api/push/', push.send_message_all);
-    app.post('/api/push/:userId', push.send_message);
+    app.post('/api/push/', push.send_message);
+    
     
    
 };

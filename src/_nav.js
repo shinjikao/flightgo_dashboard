@@ -19,18 +19,28 @@ export default {
       class: ''             // optional class names space delimited list for title item ex: "text-center"
     }, 
     {
-      name: '儀表板1',
-      url: '/dashboard',
+      name: '總覽',
+      url: '/base/summary',
+      icon: 'icon-chart',
+    },  
+    {
+      name: '推播廣告',
+      url: '/base/push-message',
+      icon: 'icon-chart',
+    },  
+    {
+      name: '客服',
+      url: '/base/custom-services',
       icon: 'icon-chart',
     },  
     {
       name: '使用者分析',
-      url: '/theme/colors',
+      url: '/base/analysis',
       icon: 'icon-graph',
     },  
     {
       name: '對話紀錄系統',
-      url: '/theme/colors',
+      url: '/base/user-history',
       icon: 'icon-bubbles',
     }, 
     {

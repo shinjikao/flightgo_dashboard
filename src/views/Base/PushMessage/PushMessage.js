@@ -62,9 +62,11 @@ class PushMessage extends Component {
                       <Input type="text" id="userid1" name="userid1" placeholder="使用者ID" autoComplete="name"/>
                     </InputGroup>
                   </FormGroup>
-                  <FormGroup>
+                  <FormGroup row>
                     <InputGroup>
-                      <Input type="text" id="message1" name="message1" placeholder="訊息" autoComplete="username"/>
+                      <Col xs="12" md="12">
+                        <Input type="textarea" id="message1" name="message1" placeholder="訊息" row="9" autoComplete="username"/>
+                      </Col>
                     </InputGroup>
                   </FormGroup>
                   <FormGroup className="form-actions">
